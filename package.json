@@ -1,7 +1,7 @@
 {
-  "name": "quicker_cli",
+  "name": "wcli",
   "version": "1.2.4",
-  "description": "vue后台模板手脚架",
+  "description": "前端项目快速搭建手脚架",
   "main": "index.js",
   "bin": "index.js",
   "dependencies": {
