@@ -15,10 +15,9 @@
   },
   "keywords": [
     "vue",
-    "vue cli",
+    "vue admin",
     "react",
-    "react cli",
-    "wcli"
+    "react admin"
   ],
   "author": "wyswill",
   "license": "MIT"
