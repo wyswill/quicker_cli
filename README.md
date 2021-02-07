@@ -2,10 +2,10 @@
 
 > 安装 
 
-`npm i quicker_cli -g`
+`npm i wys_cli -g`
 
 > 参数
 
-`quicker_cli -v[查看版本] init [要创建的项目名称]`
+`wys_cli -v[查看版本] init [要创建的项目名称]`
 
 
