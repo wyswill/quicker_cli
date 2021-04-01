@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add -D @types/scp
+  /usr/local/bin/node /usr/local/bin/yarn add -D @types/download-git-repo
 
 PATH: 
   /Users/wangyansong/flutter/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wangyansong/flutter/bin:/opt/homebrew/bin:/opt/homebrew/sbin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: http://registry.upchinaproduct.com/@types%2fscp: Not found
+  Error: http://registry.upchinaproduct.com/@types%2fdownload-git-repo: Not found
       at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140662:22)
       at Request.emit (node:events:369:20)

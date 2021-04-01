@@ -8,7 +8,6 @@ const inquirer_1 = __importDefault(require("inquirer"));
 const ora_1 = __importDefault(require("ora"));
 const commander_1 = __importDefault(require("commander"));
 const utile_1 = __importDefault(require("./utile"));
-console.log(commander_1.default.opts());
 commander_1.default.version(require("../package").version, "-v, --version");
 commander_1.default.command("init-client <name>").action(async (name) => {
     utile_1.default.checkFile(name);
