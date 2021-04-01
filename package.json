@@ -2,10 +2,10 @@
   "name": "wys_cli",
   "version": "2.0.0",
   "description": "前端项目快速搭建手脚架",
-  "main": "index.js",
-  "bin": "index.js",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
   "scripts": {
-    "dev": "node index.js",
+    "dev": "ts-node ./src/index.ts",
     "devLink": "yarn link wys_cli",
     "publish": "npm publish"
   },
@@ -15,6 +15,7 @@
     "download-git-repo": "^2.0.0",
     "handlebars": "^4.1.2",
     "inquirer": "^6.5.0",
+    "lodash": "^4.17.21",
     "log-symbols": "^3.0.0",
     "ora": "^3.4.0"
   },
@@ -23,6 +24,7 @@
     "@types/commander": "^2.12.2",
     "@types/commander-remaining-args": "^1.2.1",
     "@types/inquirer": "^6.5.0",
+    "@types/lodash": "^4.14.168",
     "@types/log-symbols": "^3.0.0",
     "@types/node": "^14.14.25"
   },
