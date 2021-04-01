@@ -1014,6 +1014,11 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.1:
   resolved "https://registry.npm.taobao.org/safer-buffer/download/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
 
+scp@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npm.taobao.org/scp/download/scp-0.0.3.tgz#8074686c8c4ccb7688c64b3f505ccaaaf64ece9f"
+  integrity sha1-gHRobIxMy3aIxks/UFzKqvZOzp8=
+
 seek-bzip@^1.0.5:
   version "1.0.6"
   resolved "https://registry.npm.taobao.org/seek-bzip/download/seek-bzip-1.0.6.tgz#35c4171f55a680916b52a07859ecf3b5857f21c4"

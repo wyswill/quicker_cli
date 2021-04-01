@@ -3,7 +3,7 @@
  * @LastEditors: wyswill
  * @Description: 主文件
  * @Date: 2021-04-01 15:25:17
- * @LastEditTime: 2021-04-01 16:06:47
+ * @LastEditTime: 2021-04-01 16:32:54
  */
 import inquirer from "inquirer";
 import ora from "ora"; //控制台的输出颜色
@@ -47,5 +47,4 @@ program.command("init-server <name>").action(async name => {
   let breath = `server`;
   Util.cloneGit(spinner, breath, author, name);
 });
-
 program.parse(process.argv);

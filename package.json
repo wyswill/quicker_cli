@@ -17,7 +17,8 @@
     "inquirer": "^6.5.0",
     "lodash": "^4.17.21",
     "log-symbols": "^3.0.0",
-    "ora": "^3.4.0"
+    "ora": "^3.4.0",
+    "scp": "^0.0.3"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
