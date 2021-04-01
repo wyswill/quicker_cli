@@ -1,10 +1,10 @@
 /*
  * @LastEditors: wyswill
- * @Description: 
+ * @Description:
  * @Date: 2021-04-01 15:25:17
- * @LastEditTime: 2021-04-01 15:25:41
+ * @LastEditTime: 2021-04-01 15:28:51
  */
-#!/usr/bin/env node
+// #!/usr/bin/env node
 const fs = require("fs");
 const download = require("download-git-repo"); //从git仓库下载
 const handlebars = require("handlebars");
@@ -70,7 +70,6 @@ program.command("init-client <name>").action(async name => {
   let breath = `${project}_${type}`;
   clone(spinner, breath, author, name);
 });
-
 program.command("init-server <name>").action(async name => {
   checkFile(name);
   const { author } = await inquirer.prompt([
