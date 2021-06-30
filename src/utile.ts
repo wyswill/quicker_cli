@@ -35,7 +35,10 @@ export default class Util {
         if (fs.existsSync(fileName)) {
           const content = fs.readFileSync(fileName).toString();
           const result = JSON.parse(content);
-          fs.writeFileSync(fileName, Object.assign(result, meta));
+          fs.writeFileSync(
+            fileName,
+            JSON.stringify(Object.assign(result, meta), null, 2),
+          );
         }
         if (breath === 'server_grpc') {
           const protoUrl = `${name}/src/rpc/${name}.proto`,

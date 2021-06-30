@@ -1,6 +1,6 @@
 {
   "name": "wys_cli",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "项目快速搭建手脚架",
   "main": "dist/src/index.js",
   "bin": {
