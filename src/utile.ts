@@ -4,11 +4,10 @@
  * @Date: 2021-04-01 15:42:34
  * @LastEditTime: 2021-04-01 15:48:35
  */
-import fs from 'fs';
-import symbols from 'log-symbols';
 import chalk from 'chalk';
 import download from 'download-git-repo'; //从git仓库下载
-import handlebars from 'handlebars';
+import fs from 'fs';
+import symbols from 'log-symbols';
 import { Ora } from 'ora';
 import os from 'os';
 import { temp } from './temp';
@@ -32,20 +31,18 @@ export default class Util {
       } else {
         spinner.succeed();
         const fileName = `${name}/package.json`;
-        const meta = {
-          name,
-          author: author,
-        };
+        const meta = { name, author };
         if (fs.existsSync(fileName)) {
           const content = fs.readFileSync(fileName).toString();
-          const result = handlebars.compile(content)(meta);
-          fs.writeFileSync(fileName, result);
+          const result = JSON.parse(content);
+          fs.writeFileSync(fileName, Object.assign(result, meta));
         }
         if (breath === 'server_grpc') {
           const protoUrl = `${name}/src/rpc/${name}.proto`,
             testFile = `${name}/test/${name}.test.ts`;
-          fs.writeFileSync(protoUrl, temp.proto(name));
-          fs.writeFileSync(testFile, temp.testFill(name));
+          fs.mkdirSync(`${name}/src/rpc`);
+          fs.writeFileSync(protoUrl, temp.proto(name), { flag: 'w+' });
+          fs.writeFileSync(testFile, temp.testFill(name), { flag: 'w+' });
         }
         console.log(symbols.success, chalk.green('项目初始化完成'));
         console.log(
